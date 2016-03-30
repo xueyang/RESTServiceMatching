@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.weibo.com/2/">
+<resource path="location/base/get_map_image.json">
+<method name="GET">
+<request>
+<param name="center_coordinate" style="query" type="xsd:string">
+</param>
+<param name="city" style="query" type="xsd:string" required="true">
+</param>
+<param name="coordinates" style="query" type="xsd:string">
+</param>
+<param name="names" style="query" type="xsd:string">
+</param>
+<param name="offset_x" style="query" type="xsd:string">
+</param>
+<param name="offset_y" style="query" type="xsd:string">
+</param>
+<param name="font" style="query" type="xsd:string">
+</param>
+<param name="lines" style="query" type="xsd:string">
+</param>
+<param name="polygons" style="query" type="xsd:string">
+</param>
+<param name="size" style="query" type="xsd:string">
+</param>
+<param name="format" style="query" type="xsd:string">
+</param>
+<param name="zoom" style="query" type="xsd:string">
+</param>
+<param name="scale" style="query" type="xsd:boolean">
+</param>
+<param name="traffic" style="query" type="xsd:bpolean">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json"/> 
+</response>
+</method>
+</resource>
+</resources>
+</application>

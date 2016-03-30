@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl/wadl.xsd">
+<resources base="https://api.douban.com/v2/">
+<resource path="movie/subject/{id}/reviews">
+<param name="id" type="xsd:string" style="template"/>
+<method name="GET">
+<request>
+<param name="start" style="query" type="xsd:int">
+</param>
+<param name="count" style="query" type="xsd:int">
+</param>
+</request>
+<response status="200"> 
+<representation mediaType="application/json" /> 
+</response> 
+</method>
+</resource>
+</resources>
+</application>

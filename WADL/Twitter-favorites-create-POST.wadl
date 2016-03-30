@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.twitter.com/1.1/">
+<resource path="favorites/create.json">
+<method name="POST">
+<request>
+<param name="id" style="query" type="xsd:long" required="true">
+</param>
+<param name="include_entities" style="query" type="xsd:boolean">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

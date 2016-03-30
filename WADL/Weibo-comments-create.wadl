@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.weibo.com/2/">
+<resource path="comments/create.json">
+<method name="POST">
+<request>
+<representation mediaType="multipart/form-data" >
+<param name="comment" style="query" type="xsd:string" required="true">
+</param>
+<param name="id" style="query" type="xsd:int" required="true">
+</param>
+<param name="comment_ori" style="query" type="xsd:int">
+</param>
+<param name="rip" style="query" type="xsd:string">
+</param>
+</representation>
+</request>
+<response> 
+<representation mediaType="application/json"/> 
+</response>
+</method>
+</resource>
+</resources>
+</application>

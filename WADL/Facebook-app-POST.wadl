@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="http://graph.facebook.com/v2.2/">
+<resource path="{app-id}">
+<param name="app-id" style="template" type="xsd:string">
+</param>
+<method name="POST">
+<request>
+<representation mediaType="multipart/form-data" >
+<param name="app_domains" style="query" type="xsd:string">
+</param>
+<param name="auth_dialog_data_help_url" style="query" type="xsd:string">
+</param>
+<param name="auth_dialog_headline" style="query" type="xsd:string">
+</param>
+<param name="auth_dialog_perms_explanation" style="query" type="xsd:string">
+</param>
+<param name="auth_referral_default_activity_privacy" style="query" type="xsd:string">
+</param>
+<param name="auth_referral_enabled" style="query" type="xsd:boolean">
+</param>
+<param name="auth_referral_extended_perms" style="query" type="xsd:string">
+</param>
+<param name="auth_referral_friend_perms" style="query" type="xsd:string">
+</param>
+<param name="auth_referral_user_perms" style="query" type="xsd:string">
+</param>
+<param name="auth_referral_response_type" style="query" type="xsd:string">
+</param>
+<param name="canvas_fluid_height" style="query" type="xsd:boolean">
+</param>
+<param name="canvas_fluid_width" style="query" type="xsd:boolean">
+</param>
+<param name="canvas_url" style="query" type="xsd:string">
+</param>
+<param name="contact_email" style="query" type="xsd:string">
+</param>
+<param name="deauth_callback_url" style="query" type="xsd:string">
+</param>
+<param name="migrations" style="query">
+</param>
+<param name="mobile_web_url" style="query" type="xsd:string">
+</param>
+<param name="namespace" style="query" type="xsd:string">
+</param>
+<param name="page_tab_default_name" style="query" type="xsd:string">
+</param>
+<param name="page_tab_url" style="query" type="xsd:string">
+</param>
+<param name="privacy_policy_url" style="query" type="xsd:string">
+</param>
+<param name="restrictions" style="query">
+</param>
+<param name="secure_canvas_url" style="query" type="xsd:string">
+</param>
+<param name="secure_page_tab_url" style="query" type="xsd:string">
+</param>
+<param name="server_ip_whitelist" style="query" type="xsd:string">
+</param>
+<param name="social_discovery " style="query" type="xsd:boolean">
+</param>
+<param name="terms_of_service_url" style="query" type="xsd:string">
+</param>
+<param name="user_support_email" style="query" type="xsd:string">
+</param>
+<param name="user_support_url" style="query" type="xsd:string">
+</param>
+<param name="website_url" style="query" type="xsd:string">
+</param>
+</representation>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl/">
+<resources base="http://api.douban.com/v2/">
+<resource path="music/search">
+<method name="GET">
+<request>
+<param name="q" style="query" type="xsd:int">
+</param>
+<param name="tag" style="query" type="xsd:string">
+</param>
+<param name="start" style="query" type="xsd:int">
+</param>
+<param name="count" style="query" type="xsd:int">
+</param>
+</request>
+<response status="200"> 
+<representation mediaType="application/json" /> 
+</response> 
+</method>
+</resource>
+</resources>
+</application>

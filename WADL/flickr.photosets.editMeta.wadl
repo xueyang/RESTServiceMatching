@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.flickr.com/services/rest/">
+<resource path="">
+<method name="POST">
+<request>
+<param name="method" style="query" fixed="flickr.photosets.editMeta" isResource="true">
+</param>
+<param name="photoset_id" style="query" type="xsd:string" required="true">
+</param>
+<param name="title" style="query" type="xsd:string" required="true">
+</param>
+<param name="description" style="query" type="xsd:string">
+</param>
+</request>
+<response> 
+<representation mediaType="application/xml" /> 
+</response>
+</method>
+</resource>
+</resources>
+</application>

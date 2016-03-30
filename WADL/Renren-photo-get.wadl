@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.renren.com/v2/">
+<resource path="photo/get">
+<method name="GET">
+<request>
+<param name="albumId" style="query" type="xsd:long">
+</param>
+<param name="photoId" style="query" type="xsd:long" required="true">
+</param>
+<param name="ownerId" style="query" type="xsd:long" required="true">
+</param>
+<param name="password" style="query" type="xsd:string">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

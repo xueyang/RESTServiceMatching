@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="http://graph.facebook.com/v2.2/">
+<resource path="{page-id}/tabs/app_{app-id}">
+<param name="page-id" style="template" type="xsd:string">
+</param>
+<param name="app-id" style="template" type="xsd:string">
+</param>
+<method name="POST">
+<request>
+<representation mediaType="multipart/form-data" >
+<param name="position" style="query" type="xsd:int">
+</param>
+<param name="custom_name" style="query" type="xsd:string">
+</param>
+<param name="is_non_connection_landing_tab" style="query" type="xsd:boolean">
+</param>
+<param name="custom_image_url" style="query" type="xsd:string">
+</param>
+<param name="custom_image" style="query" type="multipart/form-data">
+</param>
+</representation>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

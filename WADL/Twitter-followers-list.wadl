@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.twitter.com/1.1/">
+<resource path="followers/list.json">
+<method name="GET">
+<request>
+<param name="user_id" style="query" type="xsd:long">
+</param>
+<param name="screen_name" style="query" type="xsd:string">
+</param>
+<param name="cursor" style="query" type="xsd:long">
+</param>
+<param name="count" style="query" type="xsd:int">
+</param>
+<param name="skip_status" style="query" type="xsd:boolean">
+</param>
+<param name="include_user_entities" style="query" type="xsd:boolean">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

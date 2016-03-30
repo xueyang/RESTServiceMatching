@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="http://graph.facebook.com/v2.2/">
+<resource path="{page-id}">
+<param name="page-id" style="template" type="xsd:string">
+</param>
+<method name="POST">
+<request>
+<representation mediaType="multipart/form-data" >
+<param name="about" style="query" type="xsd:string">
+</param>
+<param name="company_overview" style="query" type="xsd:string">
+</param>
+<param name="description" style="query" type="xsd:string">
+</param>
+<param name="general_info" style="query" type="xsd:string">
+</param>
+<param name="hours" style="query">
+</param>
+<param name="is_permanently_closed" style="query" type="xsd:boolean">
+</param>
+<param name="is_published" style="query" type="xsd:boolean">
+</param>
+<param name="location" style="query" type="xsd:string">
+</param>
+<param name="mission" style="query" type="xsd:string">
+</param>
+<param name="parking" style="query">
+</param>
+<param name="payment_options" style="query">
+</param>
+<param name="phone" style="query" type="xsd:string">
+</param>
+<param name="price_range" style="query" type="xsd:string">
+</param>
+<param name="website" style="query" type="xsd:string">
+</param>
+<param name="ignore_coordinate_warnings" style="query" type="xsd:boolean">
+</param>
+<param name="is_always_open" style="query" type="xsd:boolean">
+</param>
+<param name="cover" style="query" type="xsd:int">
+</param>
+<param name="offset_y" style="query" type="xsd:int">
+</param>
+<param name="no_feed_story" style="query" type="xsd:boolean">
+</param>
+<param name="no_notification" style="query" type="xsd:boolean">
+</param>
+</representation>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

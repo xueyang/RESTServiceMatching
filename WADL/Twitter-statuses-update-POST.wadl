@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.twitter.com/1.1/">
+<resource path="statuses/update.json">
+<method name="POST">
+<request>
+<param name="status" style="query" type="xsd:string" required="true">
+</param>
+<param name="in_reply_to_status_id" style="query" type="xsd:int">
+</param>
+<param name="possibly_sensitive" style="query" type="xsd:boolean">
+</param>
+<param name="lat" style="query" type="xsd:float">
+</param>
+<param name="long" style="query" type="xsd:float">
+</param>
+<param name="place_id" style="query" type="xsd:string">
+</param>
+<param name="display_coordinates" style="query" type="xsd:boolean">
+</param>
+<param name="trim_user" style="query" type="xsd:boolean">
+</param>
+<param name="media_ids" style="query" type="xsd:string">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>

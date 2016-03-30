@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/Submission/wadl/wadl.xsd" xmlns="http://www.w3.org/Submission/wadl">
+<resources base="https://api.twitter.com/1.1/">
+<resource path="statuses/oembed.json">
+<method name="GET">
+<request>
+<param name="id" style="query" type="xsd:long" required="true">
+</param>
+<param name="url" style="query" type="xsd:string" required="true">
+</param>
+<param name="maxwidth" style="query" type="xsd:int">
+</param>
+<param name="hide_media" style="query" type="xsd:boolean">
+</param>
+<param name="hide_thread" style="query" type="xsd:boolean">
+</param>
+<param name="omit_script" style="query" type="xsd:boolean">
+</param>
+<param name="align" style="query" type="xsd:string">
+</param>
+<param name="related" style="query" type="xsd:string">
+</param>
+<param name="lang" style="query" type="xsd:string">
+</param>
+</request>
+<response> 
+<representation mediaType="application/json" />
+</response> 
+</method>
+</resource>
+</resources>
+</application>
